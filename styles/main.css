@@ -11,6 +11,11 @@
     --kumbh-sans: 'Kumbh Sans', sans-serif;
 }
 
+html{
+    height: 100vh;
+    width: 100%;
+}
+
  body{
     background-color: #af67e9;
     background-image: linear-gradient(to bottom right, #af67e9, #6565e7);
@@ -36,7 +41,7 @@
     align-items: center;
 }
 
-.woman-image{
+.woman-image-mobile{
     margin-top: .3rem;
     z-index: 5;
     position: relative;
@@ -46,9 +51,17 @@
     height: 250px;
 }
 
-.woman-shadow{
+.woman-image-desktop{
+    display: none;
+}
+
+.woman-shadow-mobile{
     margin-top: -260px;
     z-index: 3;
+}
+
+.woman-shadow-desktop{
+    display: none;
 }
 
 .title{
@@ -84,4 +97,89 @@
 .footer{
     position: fixed;
     bottom: 0;
+}
+
+/* ----------------------- MEDIA QUERIES ----------------------- */
+@media all and (min-width: 1440px) {
+.main-content{
+    margin-top: 6rem;
+    padding: 50px;
+    background-color: white;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    border-radius: 15px;
+    box-shadow: 0 20px 10px rgb(0 0 0 / 0.2);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-height: 700px;
+}
+
+.container-photos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.woman-image-mobile{
+    display: none;
+}
+
+.woman-image-desktop{
+    display: inline;
+    margin-top: .3rem;
+    z-index: 5;
+    position: relative;
+    bottom: 20px;
+    right: 320px;
+    width: 650px;
+    height: 650px;
+}
+
+.woman-shadow-mobile{
+    display: none;
+}
+
+.woman-shadow-desktop{
+    display: inline;
+    position: relative;
+    z-index: 3;
+    display: inline;
+    bottom: 800px;
+    right: 400px;
+}
+
+.title{
+    text-align: left;
+    font-family: var(--kumbh-sans);
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1.5rem;
+}
+
+.question{
+    padding: 10px;
+    border-bottom: 1px solid #e8e8e8;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.q1, .q2, .q3, .q4, .q5{
+    font-size: .9rem;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    grid-gap: 15px;
+    padding: 2px;
+}
+
+
+.icon{
+    color: #f0a99e;
+    font-size: 1.5rem;
+}
+
+/* FOOTER */
+.footer{
+    position: fixed;
+    bottom: 0;
+}
 }
