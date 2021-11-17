@@ -139,7 +139,7 @@ html{
     right: 120px;
     width: 350px;
     height: 350px;
-    max-height: 400px;
+    max-height: 700px;
     max-width: 400px;
 }
 
@@ -181,6 +181,9 @@ html{
 	}
 }
 
+.container-questions{
+    object-fit: contain;
+}
 
 .title{
     text-align: left;
@@ -205,6 +208,9 @@ html{
     padding: 2px;
 }
 
+.hidden{
+    display: none;
+}
 
 .icon{
     color: #f0a99e;
