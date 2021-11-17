@@ -217,6 +217,10 @@ html{
     font-size: 1.5rem;
 }
 
+.icon-end{
+    transform: rotate(180deg);
+}
+
 /* FOOTER */
 .footer{
     position: fixed;
