@@ -97,6 +97,10 @@ html{
     font-size: 1.5rem;
 }
 
+.icon-end{
+    transform: rotate(180deg);
+}
+
 .box{
     display: none;
 }
@@ -187,43 +191,28 @@ html{
 
 .title{
     text-align: left;
-    font-family: var(--kumbh-sans);
+    /* font-family: var(--kumbh-sans);
     font-size: 2rem;
     font-weight: bold;
-    margin: 1.5rem;
+    margin: 1.5rem; */
 }
 
-.question{
+/* .question{
     padding: 10px;
     border-bottom: 1px solid #e8e8e8;
     width: 90%;
     margin-bottom: 10px;
-}
-
+} */
+/* 
 .q1, .q2, .q3, .q4, .q5{
     font-size: .9rem;
     display: grid;
     grid-template-columns: 90% 10%;
     grid-gap: 15px;
     padding: 2px;
-}
+} */
 
 .hidden{
     display: none;
-}
-
-.icon{
-    color: #f0a99e;
-    font-size: 1.5rem;
-}
-
-.icon-end{
-    transform: rotate(180deg);
-}
-
-/* FOOTER */
-.footer{
-    position: fixed;
-    bottom: 0;
 }
 }
