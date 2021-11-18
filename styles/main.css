@@ -33,6 +33,7 @@ html{
     margin-right: 1.5rem;
     border-radius: 15px;
     box-shadow: 0 20px 10px rgb(0 0 0 / 0.2);
+    object-fit: cover;
 }
 
 .container-photos{
@@ -101,6 +102,10 @@ html{
     transform: rotate(180deg);
 }
 
+.bold{
+    font-weight: bold;
+}
+
 .box{
     display: none;
 }
@@ -127,12 +132,16 @@ html{
     box-shadow: 0 20px 10px rgb(0 0 0 / 0.2);
     display: grid;
     grid-template-columns: 50% 50%;
-    max-height: 400px;
+    max-height: 530px;
 }
 
 .container-photos{
-    display: flex;
-    /* overflow: hidden;  */
+    display: flex;  
+    max-height: 600px;
+}
+
+.container-questions{
+    object-fit: contain;
 }
 
 .woman-image-mobile{
@@ -161,7 +170,7 @@ html{
     z-index: 3;
     display: inline;
     bottom: 800px;
-    right: 400px; 
+    right: 400px;
 }
 
 .box{
@@ -171,7 +180,6 @@ html{
    position: relative;
    bottom: 1180px;
    right: 260px;
-   z-index: 5;
    -webkit-animation: float 0.9s infinite both;
 	        animation: float 0.9s infinite both;
    
@@ -195,28 +203,12 @@ html{
 
 .title{
     text-align: left;
-    /* font-family: var(--kumbh-sans);
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 1.5rem; */
 }
 .icon-end{
     transform: rotate(180deg);
 }
 
-/* .question{
-    padding: 10px;
-    border-bottom: 1px solid #e8e8e8;
-    width: 90%;
-    margin-bottom: 10px;
-} */
-/* 
-.q1, .q2, .q3, .q4, .q5{
-    font-size: .9rem;
-    display: grid;
-    grid-template-columns: 90% 10%;
-    grid-gap: 15px;
-    padding: 2px;
-} */
-
+.attribution {
+    margin-left: 28rem;
+}
 }
